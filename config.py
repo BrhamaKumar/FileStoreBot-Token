@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6422604456:AAGphey-vdJ3NvNXRts53hqJs9eAlqnoFzc")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7118087222:AAE_oVhlFyKEkXSs9tQ8cSfbEyC7S45QRl4")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "20810825"))
@@ -28,18 +28,18 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "6301693754"))
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = "mongodb+srv://daniel811802:0wQNzmwMkUiqOZa1@cluster0.8jaksiw.mongodb.net/?retryWrites=true&w=majority"
-DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
+DB_URI = "mongodb+srv://quinn973325:c4JPAybC3ZLPB1Rq@bkp000.vyjntzl.mongodb.net/?retryWrites=true&w=majority&appName=bkp000"
+DB_NAME = os.environ.get("DATABASE_NAME", "bkp000")
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "moneycase.link")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "95fc96273f2174408c7126b8b55619171e12bfd8")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
-IS_VERIFY = os.environ.get("IS_VERIFY", "True")
+IS_VERIFY = os.environ.get("IS_VERIFY", "False")
 TUT_VID = os.environ.get("TUT_VID","https://t.me/demosaveforce/2")
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001999905825"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002008017054"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
