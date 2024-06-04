@@ -45,7 +45,7 @@ async def new_post(client: Client, message: Message):
     link = f"https://t.me/{client.username}?start={base64_string}"
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
     try:
-        await message.edit_reply_markup(reply_markup)
+        await message.edit_reply_markup(f"<b>Here is your link</b>\n\n{link}", reply_markup=reply_markup, disable_web_page_preview = True)
     except Exception as e:
         print(e)
         pass
